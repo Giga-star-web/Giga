@@ -1,0 +1,56 @@
+@import "../styles/index.scss";
+
+.faq {
+    background-color: $secondary;
+
+    h2{
+        color: $tertiary;
+        padding-bottom: 1.5rem;
+    }
+    
+  details {
+    margin-bottom: .5rem;
+    border: 1px solid $tertiary;
+    border-radius: 12px;
+    overflow: hidden;
+
+    summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      padding: 1.25rem;
+      background: #f4f5fa;
+      cursor: pointer;
+
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $tertiary;
+
+      transition: 0.2s;
+
+      &:hover {
+        background: #eceef7;
+      }
+
+      &::-webkit-details-marker {
+        display: none;
+      }
+
+      &::after {
+        content: "+";
+        font-size: 1.75rem;
+      }
+    }
+
+    &[open] summary::after {
+      content: "−";
+    }
+
+    p {
+      padding: 1.5rem;
+      background: #fff;
+      line-height: 1.7;
+    }
+  }
+}

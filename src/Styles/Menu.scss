@@ -1,0 +1,33 @@
+@import "../styles/index.scss";
+
+nav {
+  background-color: $secondary;
+  align-items: center;
+
+  .logo {
+    img {
+      width: 100%;
+    }
+  }
+
+  .text-nav {
+    a {
+      svg {
+        color: $primary;
+      }
+      p {
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+nav{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: .5rem !important;
+
+}
+}

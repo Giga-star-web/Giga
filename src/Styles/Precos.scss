@@ -1,0 +1,138 @@
+@import "../styles/index.scss";
+
+.precos {
+  background-color: $secondary;
+
+  h1 {
+    padding-bottom: 3rem;
+    color: $tertiary;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .card {
+    border-radius: 20px;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+    border: 2px solid $tertiary;
+    margin-bottom: 3rem;
+
+    &__titulo {
+      background: #06077d;
+      border-top-left-radius: 16px;
+      border-top-right-radius: 16px;
+      color: #fff;
+      left: 0;
+      padding: 5px 20px;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__mega {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: $tertiary;
+      padding: 1rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__badge {
+      position: absolute;
+      top: 110px;
+      right: 10px;
+
+      width: 3rem;
+      height: 3rem;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: #00f17d;
+      color: $tertiary;
+
+      font-size: 0.6rem;
+      font-weight: 700;
+      text-align: center;
+      line-height: 1.1;
+      transform: rotate(25deg);
+    }
+
+    &__imagem {
+      width: 100%;
+      max-width: 18rem;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+
+    &__preco {
+      align-items: end;
+
+      small {
+        padding-bottom: 0.3rem;
+        color: $tertiary;
+        font-size: 1rem;
+      }
+
+      strong {
+        font-size: 2rem;
+        color: $tertiary;
+      }
+    }
+
+    &__texto {
+      color: $tertiary;
+      font-weight: 800;
+    }
+
+    &__acoes {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      .btn {
+        background-color: $tertiary;
+        color: $secondary;
+        font-weight: 800;
+      }
+
+      .whatsapp {
+        background: #00f17d;
+        color: $tertiary;
+        font-weight: 800;
+      }
+    }
+
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-weight: 400;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    display: none;
+  }
+}

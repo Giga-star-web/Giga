@@ -1,0 +1,57 @@
+@import "../styles/index.scss";
+
+.qualidade {
+h2{
+    padding-bottom: 2rem;
+}
+
+  .swiper {
+    padding-bottom: 4rem;
+  }
+
+  .premio-card {
+    width: 100%;
+    height: 240px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #fff;
+    border-radius: 12px;
+    border: 2px solid #807e7e46;
+    box-shadow: 1px 1px 6px 0 rgba(0, 0, 0, 0.251);
+
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: translateY(-4px);
+    }
+  }
+
+  .premio-card__img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .swiper-pagination {
+    bottom: 0;
+  }
+
+  .swiper-pagination-bullet {
+    background-color: $tertiary;
+    opacity: 0.4;
+  }
+
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: $tertiary;
+  }
+}
