@@ -1,3 +1,3 @@
 export const CONTACT = {
-  whatsapp: '12345678910'
+  whatsapp: '5591993677203'
 }
