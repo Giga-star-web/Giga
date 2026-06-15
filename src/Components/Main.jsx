@@ -46,7 +46,7 @@ const Main = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                     >
-                        Baixe o App da Giga+ Fibra
+                        Problemas com a Internet
                     </a>
                 </div>
 
